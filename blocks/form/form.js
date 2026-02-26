@@ -581,37 +581,3 @@ export default async function decorate(block) {
     container.replaceWith(form);
   }
 }
-(function (guideBridge) {
-  function computeEMI(P, annualRate, n) {
-    if (!(P > 0) || !(n > 0) || annualRate < 0 || annualRate > 100) return null;
-    const r = annualRate / 12 / 100;
-    if (r === 0) return P / n;
-    const a = Math.pow(1 + r, n);
-    return (P * r * a) / (a - 1);
-  }
-console.log(guideBridge.resolveNode('emi_amount'));
-console.log(guideBridge.resolveNode('loan_amount'));
-console.log(guideBridge.resolveNode('rate_interest'));
-console.log(guideBridge.resolveNode('loan_tenure'));
-  function updateEMI() {
-    guideBridge.resolveNode('emi_amount').value = ''; // clear first
-    console.log(guideBridge.resolveNode('emi_amount'));
-    const P = Number(guideBridge.resolveNode('loan_amount').value);
-    const annualRate = Number(guideBridge.resolveNode('rate_interest').value);
-    const n = Number(guideBridge.resolveNode('loan_tenure').value);
-
-    const emi = computeEMI(P, annualRate, n);
-    if (emi !== null) {
-      guideBridge.resolveNode('emi_amount').value = Math.round(emi); // or show 2 decimals
-    }
-  }
-
-  guideBridge.on('elementValueChanged', function (event) {
-    const affected = ['loan_amount', 'rate_interest', 'loan_tenure'];
-    if (affected.includes(event.somExpression.split('.')[1])) {
-      updateEMI();
-    }
-  });
-
-  guideBridge.on('bridgeInitializeComplete', updateEMI);
-})(window.guideBridge);
