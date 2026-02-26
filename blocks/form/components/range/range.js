@@ -22,8 +22,8 @@ export default async function decorate(fieldDiv, fieldJson) {
   const input = fieldDiv.querySelector('input');
   // modify the type in case it is not range.
   input.type = 'range';
-  input.min = input.min || 1;
-  input.max = input.max || 100;
+  input.min = input.min || 15000;
+  input.max = input.max || 1500000;
   input.step = fieldJson?.properties?.stepValue || 1;
   // create a wrapper div to provide the min/max and current value
   const div = document.createElement('div');
@@ -35,8 +35,8 @@ export default async function decorate(fieldDiv, fieldJson) {
   rangeMinEl.className = 'range-min';
   const rangeMaxEl = document.createElement('span');
   rangeMaxEl.className = 'range-max';
-  rangeMinEl.innerText = `${input.min || 1}`;
-  rangeMaxEl.innerText = `${input.max}`;
+  rangeMinEl.innerText = input.min == 50000 ? '50k' : `${input.min || 1}`;
+  rangeMaxEl.innerText = input.max == 1500000 ? '15L' : `${input.max}`;
   div.appendChild(hover);
   // move the input element within the wrapper div
   div.appendChild(input);
