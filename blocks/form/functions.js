@@ -60,16 +60,16 @@ function maskMobileNumber(mobileNumber) {
 export {
   getFullName, days, submitFormArrayToString, maskMobileNumber, calcEmi,
 };
-function calcEmi(loan_amount, rate_of_interest, loan_tenure) {
+function calcEmi(loan_amount, rate_of_interest, loan_tenure, taxes) {
   const P = Number(loan_amount || 0);
   const N = Number(loan_tenure || 0);
   const r = Number(rate_of_interest || 0) / 1200; 
- 
+  const t = Number(taxes || 0);
   if (!P || !N) return 0;
   if (r === 0) return Math.round(P / N);
  
   const pow = Math.pow(1 + r, N);
   const emi = (P * r * pow) / (pow - 1);
-  return Math.round(emi);
+  return Math.round(emi+taxes);
 }
  
