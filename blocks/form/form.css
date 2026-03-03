@@ -1011,5 +1011,6 @@ input {
         flex-flow: revert !important;
     }
 .field-hdfcmain img{
-    max-width: 10%
+    max-width: 19%;
+    padding-left: 20px;
 }
