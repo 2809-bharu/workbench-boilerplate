@@ -1007,3 +1007,6 @@ input {
   border-color: #dc2626 !important;
   box-shadow: 0 0 0 3px rgba(220,38,38,.15);
 }
+    main .form form .panel-wrapper {
+        flex-flow: revert !important;
+    }
