@@ -1010,3 +1010,6 @@ input {
     main .form form .panel-wrapper {
         flex-flow: revert !important;
     }
+.field-hdfcmain img{
+    max-width: 100%
+}
