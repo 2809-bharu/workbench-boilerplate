@@ -60,16 +60,26 @@ function maskMobileNumber(mobileNumber) {
 export {
   getFullName, days, submitFormArrayToString, maskMobileNumber, calcEmi,
 };
-function calcEmi(loan_amount, rate_of_interest, loan_tenure, taxes) {
-  const P = Number(loan_amount || 0);
-  const N = Number(loan_tenure || 0);
-  const r = Number(rate_of_interest || 0) / 1200; 
-  const t = Number(taxes || 0);
-  if (!P || !N) return 0;
-  if (r === 0) return Math.round(P / N);
- 
+
+function calcEmi(loan_amount, rate_of_interest, loan_tenure, taxes = 0) {
+  const P = Number(loan_amount) || 0;
+  const N = Number(loan_tenure) || 0;
+  const roi = Number(rate_of_interest);           // annual % (e.g., 12)
+  const t = Number(taxes) || 0;                   // fixed monthly add-on
+
+  // Must have principal and tenure
+  if (P <= 0 || N <= 0) return 0;
+
+  // 👉 Only calculate after ROI is provided (>0). Until then, return 0.
+  if (!(roi > 0)) return 0;
+
+  const r = roi / 1200;                           // monthly rate (decimal)
+
+  // Standard EMI formula
   const pow = Math.pow(1 + r, N);
   const emi = (P * r * pow) / (pow - 1);
-  return Math.round(emi+taxes);
+
+  // Add fixed monthly taxes/add-ons
+  return Math.round(emi);
 }
  
