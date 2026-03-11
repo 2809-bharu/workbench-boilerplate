@@ -1138,5 +1138,6 @@ background: #fff;
     margin:0 !important;
 }
 button:hover{
-    color: blue !important;
+    color: white !important;
+    background-color: blue !important;
 }
