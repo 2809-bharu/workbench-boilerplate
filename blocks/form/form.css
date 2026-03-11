@@ -1123,7 +1123,7 @@ background: #fff;
     margin-top: -1px;
     position: relative;
 }
-.field-loan-application-number{
+.field-loan-application-number input{
     border: none;
     background: transparent;
     font-size: 28px;
