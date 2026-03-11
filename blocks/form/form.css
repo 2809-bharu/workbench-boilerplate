@@ -64,7 +64,7 @@
     --form-card-padding: 0.6rem 0.8rem;
     --form-card-background: var(--background-color-primary);
     --form-card-shadow: 0 1px 2px rgb(0 0 0 / 3%);
-    --form-card-hover-shadow: 0 2px 4px rgb(0 0 0 / 6%);
+    --form-card-hover-shadow: #082ab3;
     --form-card-selected-border-color: var(--button-primary-color);
     --form-card-selected-background: #F5F9FF;
     --form-card-selected-shadow: 0 0 0 1px var(--button-primary-color);
@@ -1134,3 +1134,6 @@ background: #fff;
     outline: none; /* optional – removes focus outline */
 }
 
+.field-radio-panel{
+    margin:0 !important;
+}
