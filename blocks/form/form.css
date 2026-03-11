@@ -1020,3 +1020,83 @@ input {
     /* padding-left: 20px; */
     padding-right: 30px;
 }
+.field-loan-summary-panel{
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 30px !important;
+    border: 1px solid #f1f1f1;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.05);
+    max-width: 700px;
+    margin: 20px auto;
+    font-family: 'Inter', sans-serif;
+}
+.field-xpress-loan-summary-label{
+    border: none;
+    border-top: 1px dashed #e0e0e0;
+    margin: 25px 0; 
+    padding-top: 30px; 
+}
+.field-loan-application-number-value b{
+    font-size: 26px;
+    font-weight: 700;
+    color: #1d1d1d;
+}
+
+.field-plain-text1772005246423[data-id="text-947dad189b"]{
+    background: #fffbe8;
+    border-radius: 12px;
+    border: 2px solid #ffd700;
+    padding: 2px 24px;
+    margin-top: 10px !important;
+}
+ .field-emi-amount, .field-roi, .field-taxes {
+    border-left: 3px solid #f7941d;
+    padding-left: 10px;
+}
+.field-personal-details-accordion .text-wrapper, .field-loan-accordion .text-wrapper {
+    border-left: 3px solid #4f7cff;
+    padding-left: 10px;
+}
+/*.field-loan-amount input[type="text"],
+.field-emi-amount input[type="text"],
+.field-tenure input[type="text"],
+.field-processing-fee input[type="text"],
+.field-rate-of-interest input[type="text"],
+.field-tax-fee input[type="text"],
+.field-employer-name input[type="text"],
+.field-schedule-of-charges input[type="text"],
+.field-type-of-loan input[type="text"],
+.field-full-name input[type="text"],
+.field-mobile-number input[type="text"],
+.field-pan input[type="text"],
+.field-date-of-birth input[type="text"],
+.field-current-address input[type="text"],
+.field-residence-type input[type="text"]{
+    background-color: #eaf1fb !important;
+    border: none !important;
+    color: #666 !important;
+    font-size: 18px !important;
+    padding: 12px 0px !important;
+    border-radius: 8px !important;
+    margin-top: -2px !important;
+}*/
+/*.field-loan-details, .field-personal-details{
+    background-color: #eaf1fb !important;
+}*/
+.field-loan-amount{
+     border-left: 3px solid #4f7cff;
+    padding-left: 10px;
+}
+.field-emi-amount{
+     border-left: 3px solid #4f7cff !important;
+    padding-left: 10px;
+}
+.field-tenure,.field-processing-fee,.field-rate-of-interest,.field-employer-name,.field-schedule,.field-type-of-loan{
+    border-left: 3px solid #4f7cff !important;
+    padding-left: 10px;
+}
+.form .field-loan-details .accordion-legend,
+.form .field-personal-details .accordion-legend{
+   background: linear-gradient(90deg, #e7edff 0%, #d3dcff 50%, #c6d4ff 100%);
+    border-radius: 8px;
+}
