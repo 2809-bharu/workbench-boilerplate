@@ -1137,10 +1137,10 @@ background: #fff;
 .field-radio-panel{
     margin:0 !important;
 }
-button:hover{
+/*button:hover{
     color: white !important;
     background-color: blue !important;
-}
+}*/
 #textinput-7418760de1 {
     width: 250px;
     FONT-SIZE: 52PX;
@@ -1152,4 +1152,17 @@ button:hover{
     border-top: 1px dashed #e0e0e0;
     /* margin: 25px 0; */
     padding-top: 30px;
+}
+/*.field-view-loan-eligibility button:enabled {
+    background: linear-gradient(135deg, #0057ff, #2f7bff);
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 8px 18px rgba(0, 87, 255, 0.25);
+}*/
+
+button[data-active="true"]{
+   background: linear-gradient(135deg, #0057ff, #2f7bff);
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 8px 18px rgba(0, 87, 255, 0.25);
 }
