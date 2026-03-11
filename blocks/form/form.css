@@ -1123,7 +1123,7 @@ background: #fff;
     margin-top: -1px;
     position: relative;
 }
-input #textinput-378b0e6bcd{
+#textinput-378b0e6bcd {
     border: none;
     background: transparent;
     font-size: 28px;
@@ -1131,4 +1131,6 @@ input #textinput-378b0e6bcd{
     color: #111827;
     padding: 0;
     margin: 0;
+    outline: none; /* optional – removes focus outline */
 }
+
