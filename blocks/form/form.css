@@ -1153,16 +1153,4 @@ background: #fff;
     /* margin: 25px 0; */
     padding-top: 30px;
 }
-/*.field-view-loan-eligibility button:enabled {
-    background: linear-gradient(135deg, #0057ff, #2f7bff);
-    color: #fff;
-    cursor: pointer;
-    box-shadow: 0 8px 18px rgba(0, 87, 255, 0.25);
-}*/
 
-button[data-active="true"]{
-   background: linear-gradient(135deg, #0057ff, #2f7bff);
-    color: #fff;
-    cursor: pointer;
-    box-shadow: 0 8px 18px rgba(0, 87, 255, 0.25);
-}
