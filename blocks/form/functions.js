@@ -83,9 +83,18 @@ function calcEmi(loan_amount, rate_of_interest, loan_tenure, taxes = 0) {
   return Math.round(emi);
 }
 
+
 function maskMobile(num) {
-    if (!num) return "";
-    const digits = num.replace(/\D/g, ""); // keep digits only
-    if (digits.length <= 4) return digits;
-    return digits.replace(/\d(?=\d{4})/g, "*");
+    const digits = (num || '').replace(/\D/g, '');
+    
+    // Mask all digits except last 5
+    let masked;
+    if (digits.length <= 5) {
+        masked = digits;
+    } else {
+        masked = digits.replace(/\d(?=\d{5})/g, '*');
+    }
+
+    // Return full OTP message
+    return "We have sent a 6 digit OTP to your registered mobile number " + masked;
 }
