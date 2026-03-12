@@ -1182,10 +1182,19 @@ background: #fff;
 .form-wrapper{
 PADDING: 50PX ! IMPORTANT;
 }
-input{
+ #telephoneinput-e8f39059ac input[type="text"] {
 font-size: 24px;
     padding: 15px 20px;
     /* text-align: right; */
     font-family: Arial, sans-serif;
 }
-     
+         .field-submit-button input[type="text"] {
+        height: 60px;
+        width: 100%;
+        padding-right: 10px;
+        padding-left: 10px;
+        letter-spacing: 65px;
+        font-size: 20px;
+        border-radius: 16px;
+        text-align: center;
+    }
