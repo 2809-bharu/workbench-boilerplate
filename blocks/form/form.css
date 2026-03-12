@@ -1198,7 +1198,7 @@ font-size: 24px;
         border-radius: 16px;
         text-align: center;
     }
-    field-loandetails-accordion input{
+    .field-loandetails-accordion input{
           border: none !important;
     background: transparent;
     outline: none !important;
