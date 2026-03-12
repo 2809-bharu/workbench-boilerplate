@@ -1181,7 +1181,6 @@ background: #fff;
 }
 .form-wrapper{
 PADDING: 50PX ! IMPORTANT;
-max-width: 1500PX ! IMPORTANT;
 }
  #telephoneinput-e8f39059ac input[type="text"] {
 font-size: 24px;
@@ -1258,4 +1257,7 @@ height: 60px;
     font-size: 20px;
     border-radius: 16px;
     text-align: center;
+}
+#textinput-c6602f028f{
+height: 80px;
 }
