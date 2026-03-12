@@ -1290,3 +1290,6 @@ height: 80px;
     .field-taxes input{
         FONT-SIZE: 27PX !important;
     }
+    .field-otp-text{
+        PADDING-TOP: 25PX;
+    }
