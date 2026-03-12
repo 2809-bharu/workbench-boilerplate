@@ -1179,9 +1179,9 @@ background: #fff;
 .field-radio-panel{
         MARGIN-TOP: -75PX ! IMPORTANT;
 }
-.form-wrapper{
+/*.form-wrapper{
 PADDING: 50PX ! IMPORTANT;
-}
+}*/
  #telephoneinput-e8f39059ac input[type="text"] {
 font-size: 24px;
     padding: 15px 20px;
@@ -1281,6 +1281,12 @@ height: 80px;
     .field-right-summary{
         PADDING-LEFT: 10PX;
     }
-    .field-emi-amount .field-roi .field-taxes input{
+    .field-emi-amount input{
+        FONT-SIZE: 27PX;
+    }
+    .field-roi input{
+        FONT-SIZE: 27PX;
+    }
+    .field-taxes input{
         FONT-SIZE: 27PX;
     }
