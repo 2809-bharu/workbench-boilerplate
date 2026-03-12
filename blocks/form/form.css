@@ -1154,3 +1154,21 @@ background: #fff;
     padding-top: 30px;
 }
 
+#textinput-134a3cb184{
+    width: 350px;
+    height: 50px;
+    border-radius: 0;
+    padding: 25px;
+    border-radius: 14px;
+}
+#textinput-be9c6acc2f{
+    width: 350px;
+    height: 50px;
+    border-radius: 0;
+    padding: 25px;
+    border-radius: 14px;
+}
+    main .form.block .field-view-loan-eligibility button:enabled {
+        background-color: var(--hdfc-header-footer);
+    }
+}
