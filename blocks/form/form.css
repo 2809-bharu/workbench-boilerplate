@@ -1169,6 +1169,6 @@ background: #fff;
     border-radius: 14px;
 }
     main .form.block .field-view-loan-eligibility button:enabled {
-        background-color: var(--hdfc-header-footer);
+        background-color: BLUE;
     }
 }
