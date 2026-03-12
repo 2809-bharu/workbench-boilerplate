@@ -1278,3 +1278,9 @@ height: 80px;
     position: relative;
     right: -10px;
     }
+    .field-right-summary{
+        PADDING-LEFT: 10PX;
+    }
+    .field-emi-amount .field-roi .field-taxes input{
+        FONT-SIZE: 27PX;
+    }
