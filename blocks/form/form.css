@@ -1261,3 +1261,20 @@ height: 60px;
 #textinput-c6602f028f{
 height: 80px;
 }
+#numberinput-18e10b249b{
+    font-size: 3.5rem;
+    width: 90%;
+    height: 60px;
+}
+  
+    
+    .field-right-summary input{
+        background-color: #fff8e6 !important;
+    }
+    .field-roi input{
+            border: none !important;
+    background: transparent;
+    outline: none !important;
+    position: relative;
+    right: -10px;
+    }
