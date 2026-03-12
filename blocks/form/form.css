@@ -1167,8 +1167,21 @@ background: #fff;
     border-radius: 0;
     padding: 25px;
     border-radius: 14px;
+    MARGIN-LEFT: -25PX;
 }
     main .form.block .field-view-loan-eligibility button:enabled {
         background-color: BLUE;
     }
+    #telephoneinput-e8f39059ac{
+    HEIGHT: 50PX;
+    BORDERRADIUS: 8PX;
+    border-radius: 14px;
+    TEXT-ALIGN: CENTER;
+    }
+.field-radio-panel{
+        MARGIN-TOP: -75PX ! IMPORTANT;
 }
+.form-wrapper{
+PADDING: 50PX ! IMPORTANT;
+}
+     
