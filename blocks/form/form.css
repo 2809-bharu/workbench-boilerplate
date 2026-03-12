@@ -1169,7 +1169,7 @@ background: #fff;
     border-radius: 14px;
     MARGIN-LEFT: -25PX;
 }
-    main .form.block .field-view-loan-eligibility button:enabled {
+    main .form.block .field-submit-button .field-view-loan-eligibility button:enabled {
         background-color: BLUE;
     }
     #telephoneinput-e8f39059ac{
