@@ -1205,3 +1205,38 @@ font-size: 24px;
     position: relative;
     right: -10px;
     }
+    .field-personal-details-accordion input{
+          border: none !important;
+    background: transparent;
+    outline: none !important;
+    position: relative;
+    right: -10px;
+    }
+    .field-loan-amount input{
+        border: none !important;
+    background: transparent;
+    outline: none !important;
+    position: relative;
+    right: -10px;
+    }
+    .field-loan-amount-right input{
+        border: none !important;
+    background: transparent;
+    outline: none !important;
+    position: relative;
+    right: -10px;
+    }
+    .field-emi-amount input{
+            border: none !important;
+    background: transparent;
+    outline: none !important;
+    position: relative;
+    right: -10px;
+    }
+    .field-taxes input{
+            border: none !important;
+    background: transparent;
+    outline: none !important;
+    position: relative;
+    right: -10px;
+    }
