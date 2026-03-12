@@ -58,7 +58,7 @@ function maskMobileNumber(mobileNumber) {
 
 // eslint-disable-next-line import/prefer-default-export
 export {
-  getFullName, days, submitFormArrayToString, maskMobileNumber, calcEmi,
+  getFullName, days, submitFormArrayToString, maskMobileNumber,calcEmi,maskMobile,
 };
 
 function calcEmi(loan_amount, rate_of_interest, loan_tenure, taxes = 0) {
@@ -82,4 +82,10 @@ function calcEmi(loan_amount, rate_of_interest, loan_tenure, taxes = 0) {
   // Add fixed monthly taxes/add-ons
   return Math.round(emi);
 }
- 
+
+function maskMobile(num) {
+    if (!num) return "";
+    const digits = num.replace(/\D/g, ""); // keep digits only
+    if (digits.length <= 4) return digits;
+    return digits.replace(/\d(?=\d{4})/g, "*");
+}
