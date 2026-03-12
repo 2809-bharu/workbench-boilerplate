@@ -1248,3 +1248,13 @@ font-size: 24px;
     border: none;
     padding-left: 0;
 }
+.field-password input{
+height: 60px;
+    width: 102%;
+    padding-right: 10px;
+    padding-left: 10px;
+    letter-spacing: 36px;
+    font-size: 20px;
+    border-radius: 16px;
+    text-align: center;
+}
