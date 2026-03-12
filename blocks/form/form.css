@@ -922,9 +922,7 @@ background: #06133a;
   transform: translateY(1px);
   box-shadow: 0 2px 8px rgba(10, 52, 216, .24);
 }
-.button-wrapper.field-proceed .button{
-  background: #082ab3; 
-}
+
 
 /* Keyboard focus visibility */
 .button-wrapper.field-proceed .button:focus-visible {
