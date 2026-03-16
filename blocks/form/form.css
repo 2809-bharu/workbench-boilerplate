@@ -1132,9 +1132,6 @@ background: #fff;
     outline: none; /* optional – removes focus outline */
 }
 
-.field-radio-panel{
-    margin:0 !important;
-}
 /*button:hover{
     color: white !important;
     background-color: blue !important;
@@ -1292,4 +1289,19 @@ height: 80px;
     }
     .field-otp-text{
         PADDING-TOP: 25PX;
+    }
+    #datepicker-c1174b6575{
+       width: 350px;
+    height: 50px;
+    border-radius: 0;
+    padding: 25px;
+    border-radius: 14px;
+    MARGIN-LEFT: -25PX;
+    }
+    #textinput-8598838bc3{
+        HEIGHT: 70PX;
+    BORDER-RADIUS: 12PX;
+    }
+    .field-income-panel{
+margin-left: -65px;
     }
