@@ -1301,4 +1301,9 @@ height: 80px;
     }
     .field-income-panel{
 margin-left: -65px !important;
+padding-top: 24px  !important;
     }
+    .field-income-panel{
+padding-top: 16px !important;
+    }
+    
