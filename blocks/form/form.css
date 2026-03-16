@@ -1173,9 +1173,6 @@ background: #fff;
     border-radius: 14px;
     TEXT-ALIGN: CENTER;
     }
-.field-radio-panel{
-        MARGIN-TOP: -75PX ! IMPORTANT;
-}
 /*.form-wrapper{
 PADDING: 50PX ! IMPORTANT;
 }*/
@@ -1303,5 +1300,5 @@ height: 80px;
     BORDER-RADIUS: 12PX;
     }
     .field-income-panel{
-margin-left: -65px;
+margin-left: -65px !important;
     }
